@@ -39,13 +39,14 @@ export default function AuthProvider( { children }: { children: React.ReactNode 
             cache: 'no-store'
         });
 
+        
         if(!token) setAuthError('Usuário ou senha inválidos. Verifique e tente novamente!');
         else{
             setCookie(null, 'auth.token', token, {
                 maxAge: 60 * 60 * 1,
             });
             
-            router.push('/tasks');
+            router.push('/products');
         }
     }
     

@@ -18,10 +18,10 @@ const ListProduct = ({}) => {
 
     return (
         <div className="text-center">
-            <h2 className="mb-4 text-xl font-semibold text-gray-600">
+            <h2 className="mb-4 text-xl text-gray-600 font-light">
                 My Products
             </h2>
-            <div className='flex gap-2 text-gray-700 mb-4'>
+            <div className='flex gap-2 text-gray-700 mb-4 font-extralight'>
                 {options.map((option, index) => (
                     <button
                         key={index}
