@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .active-tab{
-    color: cornflowerblue;
+    color: red;
 }

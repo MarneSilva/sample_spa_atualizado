@@ -37,7 +37,7 @@ export default function AuthProvider( { children }: { children: React.ReactNode 
             body: JSON.stringify({username, password}),
             referrerPolicy: 'no-referrer',
             cache: 'no-store'
-        });
+        }, true);
 
         
         if(!token) setAuthError('Usuário ou senha inválidos. Verifique e tente novamente!');
